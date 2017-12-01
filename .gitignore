@@ -4,3 +4,4 @@ readonly
 .DS_Store
 .idea
 *.h5
+*.tgz
