@@ -5,3 +5,5 @@ readonly
 .idea
 *.h5
 *.tgz
+.pickle
+.zip
