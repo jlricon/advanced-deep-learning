@@ -7,4 +7,6 @@ readonly
 *.tgz
 *.pickle
 *.zip
-weights
+*.index
+*.meta
+
