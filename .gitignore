@@ -7,3 +7,4 @@ readonly
 *.tgz
 *.pickle
 *.zip
+weights
