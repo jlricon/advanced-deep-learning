@@ -11,3 +11,6 @@ readonly
 *.meta
 leakage
 submission.csv
+/competitive-data-science/kaggle-project/*.csv
+/competitive-data-science/kaggle-project/*.dat
+/competitive-data-science/kaggle-project/*.txt
