@@ -15,3 +15,5 @@ submission.csv
 *.csv.gz
 *.dat
 *.txt
+*.npy
+*.npz
