@@ -5,12 +5,15 @@ import time
 import argparse
 import os
 import json
-
+import tensorflow as tf
 from requests.compat import urljoin
 import dialogue_manager
+from utils import *
+
+
 
 from dialogue_manager import DialogueManager
-from utils import *
+
 class BotHandler(object):
     """
         BotHandler is a class which implements all back-end of the bot.

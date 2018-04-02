@@ -121,3 +121,8 @@ venv.bak/
 
 # mypy
 .mypy_cache/
+
+*.tsv
+*.png
+starSpaceModel
+natural-language-processing/honor/model/*

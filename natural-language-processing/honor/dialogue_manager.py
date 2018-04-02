@@ -3,7 +3,8 @@ from sklearn.metrics.pairwise import pairwise_distances_argmin
 
 from chatterbot import ChatBot
 from utils import *
-
+import tfmodel
+from tfmodel import *
 
 class ThreadRanker(object):
     def __init__(self, paths):
@@ -38,6 +39,7 @@ class ThreadRanker(object):
 class DialogueManager(object):
     def __init__(self, paths):
         print("Loading resources...")
+	self.sess=load_model()
 
         # Intent recognition:
         self.intent_recognizer = unpickle_file(paths['INTENT_RECOGNIZER'])
@@ -78,7 +80,7 @@ class DialogueManager(object):
         # Chit-chat part:
         if intent == 'dialogue':
             # Pass question to chitchat_bot to generate a response.
-            response =  self.chitchat_bot.get_response(question)
+            response =  reply("hi",word2id,max_len,id2word,sess)
             return response
 
         # Goal-oriented part:
